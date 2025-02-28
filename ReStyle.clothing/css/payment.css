@@ -1,0 +1,257 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background-color: #f7cac9; soft pink background */
+  background: url('/images/payment.jpeg') center / cover no-repeat;
+
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  margin: 20px auto;
+  max-width: 960px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: rgb(255 255 255 / 75%);
+}
+
+.left {
+  width: 50%;
+  padding-right: 20px;
+  border-right: 1px solid #ccc;
+}
+
+.right {
+  width: 50%;
+  padding-left: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  /* bright pink color */
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Lucida Handwriting";
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+  /* bright pink color */
+  font-weight: bold;
+  font-family: monospace;
+}
+
+.breadcrumb {
+  display: flex;
+  margin-bottom: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.breadcrumb li {
+  margin-right: 10px;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #e2553f;
+  /* bright pink color */
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+  /* bright pink color */
+  font-family: Papyrus, fantasy;
+  font-size: 14px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.form-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  appearance: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 14px;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  border: 1px solid #b6b6b6;
+}
+
+.btn:hover {
+  background-color: #666;
+  color: #fff;
+}
+
+
+.order-item {
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0;
+}
+
+.order-item:last-child {
+  border-bottom: none;
+}
+
+.order-item-name {
+  font-weight: bold;
+  color: #e2553f;
+  /* bright pink color */
+  font-family: 'Open Sans', sans-serif;
+}
+
+.order-item-price {
+  float: right;
+  font-size: 18px;
+  font-weight: bold;
+  color: #e2553f;
+  /* bright pink color */
+  font-family: 'Open Sans', sans-serif;
+}
+
+.total-price {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #e2553f;
+  /* bright pink color */
+  font-family: 'Open Sans', sans-serif;
+}
+
+.discount-code {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.discount-code input {
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.discount-code button {
+  width: 30%;
+  padding: 10px;
+  background-color: #e2553f;
+  /* bright pink color */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.discount-code button:hover {
+  background-color: #ffc5c5;
+  /* lighter pink color */
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f7cac9;
+  /* soft pink background */
+  border-top: 1px solid #ccc;
+  font-family: 'OpenSans', sans-serif;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #e2553f;
+  /* bright pink color */
+}
+
+/* Styles for checkout items */
+.checkout-item {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 10px;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.checkout-item-name {
+  font-weight: bold;
+  font-family: Courier;
+  font-size: 15px;
+}
+
+.checkout-item-price,
+.checkout-item-quantity,
+.checkout-item-total {
+  text-align: center;
+}
+
+.checkout-item-price,
+.checkout-item-total {
+  font-size: 14px;
+  font-family: Courier, monospace;
+}
+
+.checkout-item-quantity {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.checkout-item-total {
+  font-weight: 800;
+  color: #333;
+
+}
+
+.checkout-total #checkout-total {
+  font-family: Courier, monospace;
+}
+
+.payment-method {
+  margin-bottom: 8px;
+}
+
+.method {
+  font-family: monospace;
+  font-size: 16px;
+}

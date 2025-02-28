@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReStyle</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header>
+
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="#" class="logo">RESTYLE<span>.ARCHIVED</span></a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">about us</a>
+            <a href="products.html">Product</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="shoppingcart.html" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-user"></a>
+        </div>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+    <a class="slider" id="home" href="#">
+        <video autoplay="" loop="" muted="" playsinline=""
+            src="https://player.vimeo.com/progressive_redirect/playback/1050174888/rendition/1080p/file.mp4?loc=external&amp;signature=79e68850f5f9f82e8cf0aacf63d81944b3e05f79ff61f536061d075a53828acb"
+            style="width: 100%; height: auto" webkit-playsinline=""></video>
+    </a>
+    <section class="home">
+
+        <div class="content">
+
+            <h3>Vintage Fashion</h3>
+            <span> Unique – Stylish & Sustainable </span>
+            <p>Discover the charm in every second-hand piece! From bold vintage jackets to retro denim, each item tells
+                its own story. Let your style speak for itself with outfits that are trendy, unique, and eco-friendly.
+            </p>
+            <a href="products.html" class="btn" style="float: left;">Buy now</a>
+        </div>
+
+    </section>
+
+    <script type="">
+    window.addEventListener("scroll", function() {
+    let header = document.querySelector("header");
+    if (window.scrollY > 0) {
+        header.classList.add("sticky");
+    } else {
+        header.classList.remove("sticky");
+    }
+});
+</script>
+
+    <!-- home section ends -->
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading"> <span> About </span> us </h1>
+
+        <div class="row">
+
+            <div class="video-container">
+                <!-- <video src="images/about-vid.mp4" loop autoplay muted></video> -->
+                <img src="./images/about-us.jpg" alt="">
+                <!-- <h3>"Mac di so deo gi"</h3> -->
+            </div>
+
+            <div class="content">
+                <h3>Why Choose Us?</h3>
+                <p>We don’t just sell clothes – we bring stories and style. Every item in our shop is carefully
+                    selected, ensuring great quality, perfect fit, and affordable prices. From classic vintage to edgy
+                    streetwear and everyday basics, we’ve got it all.</p>
+                <p>Buying second-hand fashion not only saves you money but also helps protect the environment. New
+                    arrivals drop frequently, so grab them before they’re gone. Our team is always ready to help you
+                    find the perfect fit for your style.
+
+                    Shop now and refresh your wardrobe!</p>
+                <a href="#" class="btn">See more</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- icons section starts  -->
+
+    <section class="icons-container">
+
+        <div class="icons">
+            <img src="images/icon-1.png" alt="">
+            <div class="info">
+                <h3>Free Shipping</h3>
+                <span>for all orders</span>
+            </div>
+        </div>
+
+        <div class="icons">
+            <img src="images/icon-2.png" alt="">
+            <div class="info">
+                <h3>Return orders within 10 days</h3>
+                <span>if you are not satisfied</span>
+            </div>
+        </div>
+
+        <div class="icons">
+            <img src="images/icon-3.png" alt="">
+            <div class="info">
+                <h3>Receive Orders and Gift Wrapping</h3>
+                <span>if customer requires</span>
+            </div>
+        </div>
+
+        <div class="icons">
+            <img src="images/icon-4.png" alt="">
+            <div class="info">
+                <h3>Online payment</h3>
+                <span>Accept multiple forms of payment</span>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- icons section ends -->
+
+    <!-- prodcuts section starts  -->
+
+    <section class="products" id="products">
+
+        <h1 class="heading"> <span>Popular</span> Products </h1>
+        <div class="box-container" id="product-container">
+            <!-- Sản phẩm sẽ được thêm vào đây bởi JavaScript -->
+        </div>
+    </section>
+
+    <!-- prodcuts section ends -->
+
+    <!-- Notification box -->
+    <div class="notification" id="notification">
+        <span class="message" id="notificationMessage"></span>
+        <span class="close-btn" onclick="closeNotification()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                    d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z" />
+            </svg>
+        </span>
+    </div>
+    <!-- Notification box end-->
+
+    <!-- review section starts  -->
+
+    <section class="review" id="review">
+
+        <h1 class="heading"> <span>Customer Reviews</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"Siiiiuuu! Shop này quá đỉnh của chóp luôn! Quần áo 2hand nhưng chất lượng như Ballon d'Or! Mặc vào
+                    là auto ghi bàn phong cách, không đụng hàng, không offside! Mặc vào vấp cỏ là có penalty! VAMOS!"
+                </p>
+                <div class="user">
+                    <img src="images/pic-1.png" alt="">
+                    <div class="user-info">
+                        <h3>Bảy tạ</h3>
+                        <span>Vận động viên</span>
+                    </div>
+                </div>
+                <span class="fas fa-quote-right"></span>
+            </div>
+
+            <div class="box">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"Định mệnh ảo thật đấy, từ nhỏ đến giờ Bảnh chưa bao giờ mặc bộ nào chất như thế này! Đúng là đỉnh
+                    của chóp! Mặc chất như nước cất, mặc vào auto ngầu, chất chơi khỏi bàn, vào là phải quẩy thôi anh em
+                    ạ!"</p>
+                <div class="user">
+                    <img src="images/pic-2.png" alt="">
+                    <div class="user-info">
+                        <h3>Khá Bảnh</h3>
+                        <span>Youtuber</span>
+                    </div>
+                </div>
+                <span class="fas fa-quote-right"></span>
+            </div>
+
+            <div class="box">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"Chúng tôi đã theo dõi shop này một thời gian và xác nhận rằng... quá chất! Cũ nhưng phong cách thì
+                    hạng nhất. Mặc vào phá án thành công biết bao nhiêu vụ án! Đề nghị anh em nhanh tay sở hữu trước khi
+                    hết hàng!"</p>
+                <div class="user">
+                    <img src="images/pic-3.png" alt="">
+                    <div class="user-info">
+                        <h3>Anh cong an</h3>
+                        <span>Trinh sát</span>
+                    </div>
+                </div>
+                <span class="fas fa-quote-right"></span>
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading"> <span> Contact Us </span> </h1>
+
+        <div class="row">
+            <div class="image">
+                <img src="images/contact-img.svg" alt="">
+            </div>
+            <form action="">
+                <input type="text" placeholder="name" class="box">
+                <input type="email" placeholder="email" class="box">
+                <input type="number" placeholder="number" class="box">
+                <textarea name="" class="box" placeholder="message" id="" cols="30" rows="10"></textarea>
+                <input type="submit" value="send" class="btn">
+            </form>
+
+
+
+        </div>
+
+    </section>
+
+    <!-- contact section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#home">home</a>
+                <a href="#about">about us</a>
+                <a href="products.html">product </a>
+                <a href="#review">Review</a>
+                <a href="#contact">contact</a>
+            </div>
+
+
+            <div class="box">
+                <h3>headquarters</h3>
+                <a href="#">Ho Chi Minh</a>
+                <a href="#">New York</a>
+                <a href="#">Seoul</a>
+                <a href="#">London</a>
+            </div>
+
+            <div class="box">
+                <h3 class="bump"> Social links</h3>
+                <a href="https://www.facebook.com/quanghaoocb"> <i class="fab fa-facebook-f"></i> facebook</a>
+                <a href=""> <i class="fab fa-twitter"></i> twitter</a>
+                <a href=""> <i class="fab fa-instagram"></i> instagram</a>
+                <a href=""> <i class="fab fa-linkedin"></i> linkedin</a>
+                <a href=""> <i class="fab fa-pinterest"></i> pinterest</a>
+                <a href=""> <i class="fab fa-youtube"></i> youtube</a>
+            </div>
+
+            <div class="box">
+                <h3>Contact Information</h3>
+                <a href="#">+123-456-7890</a>
+                <a href="#">restyle.archived@gmail.com</a>
+                <a href="#">TP. HCM, Viet Nam </a>
+            </div>
+
+            <div class="box">
+                <h3>Accept payments</h3>
+
+                <img class="paypal" src="./images/paypal1.svg" alt="payment image">
+                <img class="paypal" src="./images/paypal2.svg" alt="payment image">
+                <img class="paypal" src="./images/paypal3.svg" alt="payment image">
+                <img class="paypal" src="./images/paypal4.svg" alt="payment image">
+                <img class="paypal" src="./images/paypal5.svg" alt="payment image">
+                <img class="paypal" src="./images/paypal6.svg" alt="payment image">
+            </div>
+        </div>
+
+        <div class="credit"> © 2016 - 2025 RESTYLE.ARCHIVED. All rights reserved. </div>
+
+    </section>
+
+    <!-- footer section ends -->
+    <script src="js/randomproduct.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            loadProducts(8); // Load 9 sản phẩm
+        });
+    </script>
+    <script src="js/shoppingcart.js"></script>
+</body>
+
+</html>

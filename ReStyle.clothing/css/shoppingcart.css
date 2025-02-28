@@ -1,0 +1,163 @@
+/* Main Section */
+.container {
+    max-width: 1052px;
+    margin: 66px auto;
+    background-color: #fff;
+    padding: 80px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 20px 6px rgb(0 0 0 / 20%);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th:first-child,
+td:first-child {
+    text-align: left;
+}
+
+.total {
+    text-align: right;
+    margin-top: 10px;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.total span {
+    color: var(--btn);
+}
+
+.btn {
+    background-color: var(--btn);
+    color: white;
+    padding: 10px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 14px;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #373737;
+    color: #fff;
+}
+
+/* Cart Item */
+.cart-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item .item-details {
+    flex: 1;
+}
+
+.cart-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.cart-item .price {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #e84393;
+    margin-bottom: 10px;
+}
+
+.cart-item .quantity {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.cart-item .total-price {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+/* Total Section */
+.total-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.total-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.total-section .total-amount {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #e84393;
+    margin-bottom: 20px;
+}
+
+.total-section .btn {
+    padding: 12px 25px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.total-section .btn:hover {
+    background-color: #e84393;
+}
+
+/* Child Cart */
+
+.product-name {
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.6rem;
+    /* Tăng kích thước font chữ */
+}
+
+.product-price,
+.product-total {
+    text-align: center;
+    font-size: 1.6rem;
+    /* Tăng kích thước font chữ */
+}
+
+.product-quantity {
+    text-align: center;
+    font-size: 1.6rem;
+    /* Tăng kích thước font chữ */
+}

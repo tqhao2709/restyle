@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReStyle - Payment</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/payment.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>RESTYLE.ARCHIVED</h1>
+            <h2>Delivery Information:</h2>
+            <form id="orderForm" action="/submit-your-action" method="POST">
+                <div class="form-group">
+                    <label for="name" class="form-label">Recipient's Name</label>
+                    <input type="text" id="name" name="name" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input id="email" id="email" name="email" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="address" class="form-label">Address</label>
+                    <textarea id="address" name="address" class="form-input" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="province" class="form-label">Province / City</label>
+                    <select id="province" name="province" class="form-select" required>
+                        <option value="">Select province/city</option>
+                        <!-- Options populated dynamically -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="district" class="form-label">District</label>
+                    <select id="district" name="district" class="form-select" required>
+                        <option value="">Select district</option>
+                        <!-- Options populated dynamically -->
+                    </select>
+                </div>
+                <button type="submit" class="btn">Purchase</button>
+            </form>
+        </div>
+        <div class="right">
+            <h1>Order Information</h1>
+
+            <div id="checkout-items">
+                <!-- Các sản phẩm trong giỏ hàng sẽ được hiển thị ở đây -->
+            </div>
+
+            <div class="checkout-total">
+                <span>Total:</span> <span id="checkout-total">$0.00</span>
+            </div>
+
+            <div class="payment-method">
+                <h2>Payment Methods</h2>
+                <label class="method">
+                    <input type="radio" name="paymentMethod" value="bankTransfer" checked>
+                    Bank Transfer
+                </label><br>
+                <label class="method">
+                    <input type="radio" name="paymentMethod" value="cashOnDelivery">
+                    Pay on Delivery (COD)
+                </label><br>
+            </div>
+
+            <a href="shoppingcart.html" class="btn">Return to cart</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/vitri.js"></script>
+    <script src="js/payment.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init('HblFaLep3thAjg4oG');
+        })();
+    </script>
+</body>
+
+</html>
